@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@200;300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter";
+  font-weight: 500;
+}
+
+.grid-calculator {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.grid-calculator-form {
+  display: grid;
+}
+
+.grid-calculator-form form {
+  display: grid;
+  padding: 20px 60px;
+  gap: 20px;
+}
+
+.grid-calculator-form input {
+  width: 100%;
+  margin: 5px 0;
+}
+
+.tittle {
+  background: #7337f1;
+  padding: 35px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.slider {
+  appearance: none;
+  width: 100%;
+  height: 20px;
+  background: #7337f1;
+  outline: none;
+  opacity: 0.3;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 12px;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider:hover {
+  opacity: 0.8;
+}
+
+.slider::-moz-range-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.idade,
+.peso,
+.altura {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.sexo ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.genero {
+  display: block;
+  padding: 15px 23px;
+  border-radius: 6px;
+  background-color: #dfccfb;
+  font-size: 0.8rem;
+  color: #7337f1;
+  cursor: pointer;
+}
+
+.ativo {
+  display: block;
+  padding: 15px 23px;
+  border-radius: 6px;
+  background-color: #dfccfb;
+  font-size: 0.8rem;
+  color: #7337f1;
+  border: solid 2px #7337f1;
+  cursor: pointer;
+}
+
+.btn {
+  display: block;
+  padding: 15px 23px;
+  border-radius: 6px;
+  background-color: #7337f1;
+  font-size: 1rem;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.sexo {
+  margin: 10px 0;
+}
+.sexo p {
+  padding-bottom: 5px;
+}
+
+.valores {
+  font-size: 1.5rem;
+}
+
+.valor-range {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  color: grey;
+}
+
+.btn {
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .grid-calculator {
+    grid-template-columns: 1fr;
+  }
+}

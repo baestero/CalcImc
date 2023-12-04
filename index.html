@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>IMC calculator</title>
+</head>
+
+<body>
+
+  <div class="grid-calculator">
+
+    <div>
+
+    </div>
+
+
+    <div class="grid-calculator-form">
+
+      <div class="tittle">
+        <h1>IMC calculator</h1>
+      </div>
+
+      <form id="form" class="form">
+
+        <div>
+          <div class="idade">
+            <p>Idade</p>
+            <p class="valores" id="valorIdade"> </p>
+          </div>
+
+          <input type="range" min="0" max="100" step="1" class="slider" id="idade" value="0">
+
+          <div class="valor-range">
+            <p>0</p>
+            <p>50</p>
+            <p>100</p>
+          </div>
+        </div>
+
+        <div class="sexo">
+          <p>SEXO</p>
+          <ul>
+            <li><a class="genero" href="#">MASCULINO</a></li>
+            <li><a class="genero" href="#">FEMININO</a></li>
+          </ul>
+        </div>
+
+        <div>
+
+          <div class="peso">
+            <p>Peso selecionado:</p>
+            <p class="valores" id="valorPeso"></p>
+          </div>
+          <input type="range" min="0" max="200" step="1" class="slider" id="peso" value="0">
+
+          <div class="valor-range">
+            <p>0</p>
+            <p>100</p>
+            <p>200</p>
+          </div>
+        </div>
+
+
+        <div>
+          <div class="altura">
+            <p>Altura selecionada:</p>
+            <p class="valores" id="valorAltura"></p>
+          </div>
+          <input type="range" min="0" max="2.5" step="0.1" id="altura" value="0" class="slider">
+
+          <div class="valor-range">
+            <p>0</p>
+            <p>1.2</p>
+            <p>2</p>
+          </div>
+        </div>
+
+        <p id="resultado"></p>
+
+        <a class="btn" id="btn">CALCULAR</a>
+
+      </form>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
