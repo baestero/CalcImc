@@ -9,10 +9,14 @@
   font-weight: 500;
 }
 
+body {
+  background: #f7f7f7b2;
+}
+
 .grid-calculator {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 1000px;
+  grid-template-columns: 1fr;
+  max-width: 850px;
   margin: 0 auto;
 }
 
@@ -24,6 +28,8 @@
   display: grid;
   padding: 20px 60px;
   gap: 20px;
+  background: white;
+  border-radius: 0px 8px 0px 8px;
 }
 
 .grid-calculator-form input {
@@ -36,6 +42,10 @@
   padding: 35px;
   text-align: center;
   color: whitesmoke;
+}
+
+.tittle img {
+  display: none;
 }
 
 .slider {
@@ -139,8 +149,130 @@
   padding: 20px 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 851px) {
   .grid-calculator {
-    grid-template-columns: 1fr;
+    margin: 100px auto;
+  }
+
+  .grid-calculator-form {
+    grid-template-columns: 1fr 1fr;
+    border-radius: 6px;
+  }
+
+  .grid-calculator-form form {
+    padding: 30px 60px;
+  }
+
+  .tittle {
+    display: grid;
+    align-items: center;
+    border-radius: 8px 0px 0px 8px;
+  }
+
+  .tittle h1 {
+    align-self: center;
+  }
+
+  .tittle img {
+    display: flex;
+    justify-self: center;
+    align-self: start;
+    max-width: 50%;
+  }
+
+  .sexo ul {
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 850px) {
+  .grid-calculator-form form {
+    display: grid;
+    padding: 50px 150px;
+    gap: 40px;
+  }
+  .tittle {
+    padding: 50px;
+  }
+
+  .tittle h1 {
+    font-size: 2.9rem;
+  }
+
+  .idade,
+  .peso,
+  .altura {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    font-size: 1.5rem;
+  }
+
+  .valores {
+    font-size: 2rem;
+  }
+
+  .sexo p {
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+  }
+
+  .genero {
+    padding: 20px 40px;
+    font-size: 1rem;
+  }
+
+  .ativo {
+    padding: 20px 40px;
+    font-size: 1rem;
+  }
+
+  .sexo ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .btn {
+    display: grid;
+    text-align: center;
+    padding: 25px;
+  }
+
+  #resultado {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .tittle {
+    padding: 10px;
+  }
+
+  .tittle h1 {
+    font-size: 1.7rem;
+  }
+
+  .grid-calculator-form form {
+    display: grid;
+    padding: 5px 45px;
+    gap: 5px;
+  }
+
+  .genero {
+    padding: 15px 20px;
+    font-size: 0.8rem;
+  }
+
+  #resultado {
+    margin: 5px auto;
+  }
+
+  .ativo {
+    padding: 15px 20px;
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    padding: 10px 0;
   }
 }

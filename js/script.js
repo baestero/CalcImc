@@ -8,6 +8,7 @@ const btn = document.querySelector("#btn");
 const res = document.querySelector("#resultado");
 const form = document.querySelector("form");
 const linksInternos = document.querySelectorAll('a[href^="#"]');
+let res2 = document.querySelector(".resultado2");
 
 linksInternos.forEach((link) => {
   link.addEventListener("click", (event) => {
