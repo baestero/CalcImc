@@ -185,6 +185,24 @@ body {
   }
 }
 
+.js-animation,
+.ativo1 {
+  display: block;
+  animation: slideDown 0.5s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  to {
+    opacity: 1;
+    max-height: 200px;
+  }
+}
+
 @media screen and (min-width: 650px) and (max-width: 850px) {
   .grid-calculator-form form {
     display: grid;

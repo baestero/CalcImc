@@ -41,7 +41,16 @@ altura.addEventListener("input", () => {
   valorAltura.textContent = altura.value + " m";
 });
 
+res.style.display = "none";
+
 btn.addEventListener("click", () => {
+  function animacao() {
+    res.style.display = "block";
+    res.classList.add("ativo", "ativo1");
+  }
+
+  animacao();
+
   if (idade.value == 0 || peso.value == 0 || altura.value == 0) {
     res.textContent =
       "Selecione o Sexo e arrastando para o lado, Idade, Peso e Altura";
