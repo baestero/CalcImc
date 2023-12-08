@@ -41,12 +41,9 @@ altura.addEventListener("input", () => {
   valorAltura.textContent = altura.value + " m";
 });
 
-res.style.display = "none";
-
 btn.addEventListener("click", () => {
   function animacao() {
-    res.style.display = "block";
-    res.classList.add("ativo", "ativo1");
+    res.classList.add("ativo1");
   }
 
   animacao();
