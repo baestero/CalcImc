@@ -48,6 +48,4 @@ Neste projeto você encontrará:
 Projeto desenvolvido por **Leonardo Baestero**
 GitHub: [https://github.com/baestero](https://github.com/baestero)
 
----
 
-Se precisar de mais algum ajuste, é só avisar!
