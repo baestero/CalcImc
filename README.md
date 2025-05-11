@@ -19,6 +19,8 @@ Neste projeto você encontrará:
 
 ## 🖼 Preview
 
+Aqui está uma prévia do projeto.
+
 ![Preview do Projeto](./calcimc.png)
 
 ## 🛠 Tecnologias Utilizadas
