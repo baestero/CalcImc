@@ -19,7 +19,7 @@ Neste projeto você encontrará:
 
 ## 🖼 Preview
 
-![Preview do Projeto](./calcImc.png)
+![Preview do Projeto](./calcimc.png)
 
 ## 🛠 Tecnologias Utilizadas
 
@@ -47,5 +47,3 @@ Neste projeto você encontrará:
 
 Projeto desenvolvido por **Leonardo Baestero**
 GitHub: [https://github.com/baestero](https://github.com/baestero)
-
-
